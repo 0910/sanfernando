@@ -1,0 +1,6 @@
+%p #{@calendar.title}
+%p #{@calendar.subtitle}
+%p #{@calendar.info}
+%p #{@calendar.fecha}
+- @calendar.images.each do |image|
+	= image_tag(image.file.url(:large))

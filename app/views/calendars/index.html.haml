@@ -1,0 +1,7 @@
+%h1 Listing calendars
+
+
+- @calendars.each do |calendar|
+  %tr
+    %td
+      = link_to calendar.title, calendar

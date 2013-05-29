@@ -1,0 +1,31 @@
+#content
+	#content-inside
+		.top.top-section
+			%h1 noticias
+			.cierre-oscuro
+		.left
+			.grid-8-12
+				.news-inside
+					.item
+						.ph
+							.phslider
+								- @news.images.each do |image|
+									= image_tag(image.file.url(:large))
+							= link_to('', "#", :class => "prevslider")
+							= link_to('', "#", :class => "nextSlider")
+						.data
+							%h2 #{@news.title}
+							%h4 #{@news.subtitle}
+							%h5 
+								#{I18n.l(@news.date, :format => '%d %B %Y')}
+							%p #{@news.info}
+							- unless @news.videos.empty?
+								%iframe.newsvideoframe(type="text/html" width="285" height="214" src="#{@news.videos}" frameborder="0" allowfullscreen)
+							.share
+								%p Compartir
+								%ul
+									.fb-like(style="top:-3px;" data-href="#" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial")
+									= link_to('Tweet', "https://twitter.com/share", :class => "twitter-share-button", 'data-url' => "#")
+									%script
+										!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		= render '/layouts/mas_sanfer'

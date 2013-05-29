@@ -1,0 +1,13 @@
+!!!
+%html
+	%head
+		%title Sanfernando
+		= stylesheet_link_tag    "application", :media => "all"
+		= javascript_include_tag "application"
+		= csrf_meta_tags
+	%body
+		#main
+			= render '/layouts/navigation'
+			= yield
+			= render '/layouts/media'
+			= render '/layouts/footer'

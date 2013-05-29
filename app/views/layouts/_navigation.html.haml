@@ -1,0 +1,250 @@
+/FACEBOOK 
+#fb-root
+:javascript
+	(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+#main
+	#top
+		#nav
+			#logo
+			#menu
+				%ul
+					%li 
+						%a(style="font-size:18px;" href="#") Inicio
+					%ul.dropdown.ciudad 
+						%li.active
+							%a(style="font-size:18px;" href="#") La ciudad 
+						%li.active-inside
+							%a(href="#") El Delta
+							%ul.drop-inside
+								%li 
+									%a(href="#")Clima y suelo
+								%li 
+									%a(href="#")Curiosidades del Delta
+								%li 
+									%a(href="#") Flora y fauna
+								%li 
+									%a(href="#") Producción sustentable
+								%li 
+									%a(href="#") Reserva de biosfera
+								%li 
+									%a(href="#") Sección Islas del Delta
+						/ NAUTICA
+						%li.active-inside
+							%a (href="#") Náutica
+							%ul.drop-inside
+								%li 
+									%a(href="#") alón náutico
+								%li 
+									%a(href="#") Consorcio parque náutico
+								%li 
+									%a(href="#") Clubes, guarderías y marinas
+								%li 
+									%a(href="#") Industria
+							
+						/ TELEFONOS 
+						%li.active-inside
+							%a(href="#") Teléfonos útiles
+							%ul.drop-inside
+								%li 
+									%a(href="#") Oficinas municipales
+								%li 
+									%a(href="#") Salud
+								%li 
+									%a (href="#") Seguridad
+								%li 
+									%a (href="#") Servicios básicos
+							
+						/ TURISMO 
+						%li.active-inside
+							%a(href="#") Turismo
+							%ul.drop-inside
+								%li 
+									%a(href="#") Accesos y agencias de turismo
+								%li 
+									%a(href="#") Aeropuerto internacional
+								%li 
+									%a(href="#") Ecoturismo y pesca deportiva
+								%li 
+									%a(href="#") Gastronomía
+								%li 
+									%a(href="#") Hospedaje
+							
+						/ SITIOS DE INTERES 
+						%li.active-inside
+							%a(href="#") Sitios de interés
+							%ul.drop-inside
+								%li 
+									%a(href="#") Costaneras públicas
+								%li 
+									%a(href="#") Ferias artesanales
+								%li 
+									%a(href="#") Lugares históricos
+								%li 
+									%a(href="#") Plazas y parques
+								%li 
+									%a(href="#") Teatros
+							
+						/ ESTADISTICAS Y CENSOS 
+						%li 
+							%a(href="#") Estadísticas y censos
+						/ HISTORIA 
+						%li.active-inside
+							%a(href="#") Historia
+							%ul.drop-inside
+								%li 
+									%a(href="#") Bandera y escudo
+								%li 
+									%a(href="#") Localidades del partido
+								%li 
+									%a(href="#") Orígenes del municipio
+								%li 
+									%a(href="#") Puntos principales del crecimiento de San Fernando
+								%li 
+									%a(href="#") Rasgos característicos de San Fernando
+							
+						/ DATOS UTILES 
+						%li 
+							%a(href="#") Datos útiles
+						/ MEDIO AMBIENTE 
+						%li 
+							%a(href="#") Medio ambiente
+					
+
+					/GOBIERNO 
+					%ul.dropdown.gobierno
+						%li.active
+							%a(style="font-size:18px;" href="#") Gobierno
+						%li 
+							%a(href="#") Intendencia
+						/ AUTORIDADES 
+						%li.active-inside
+							%a(href="#") Autoridades
+							%ul.drop-inside
+								%li 
+									%a(href="#") Secretaría de desarrollo social, medio ambiente y salud pública
+								%li 
+									%a(href="#") Secretaría de economía
+								%li 
+									%a(href="#") Secretaría de educación, cultura y contención social
+								%li 
+									%a(href="#") Secretaría de gobierno
+								%li 
+									%a(href="#") Secretaría de obras e infraestructura pública
+								%li 
+									%a(href="#") Secretaría de privada y coordinación 
+								%li 
+									%a(href="#") Secretaría de protección ciudadana
+							
+						/ CULTURA Y DEPORTE 
+						%li.active-inside
+							%a(href="#") Cultura y deporte
+							%ul.drop-inside
+								%li.inside-1
+									%a(href="#") Cultura
+									%ul.drop-inside-2.inside-1-li
+										%li 
+											%a(href="#") Bibliotecas populares
+										%li 
+											%a(href="#") Centros culturales
+										%li 
+											%a(href="#") Escuela de formación artística
+						%li 
+							%a(href="#") Talleres culturales
+							%ul.drop-inside
+								%li.inside-2
+									%a(href="#") Deportes
+									%ul.drop-inside-2.inside-2-li
+										%li 
+											%a(href="#") CE.DE.C. Nº1
+										%li 
+											%a(href="#") CE.DE.C. Nº2
+										%li 
+											%a(href="#") CE.DE.C. Nº3
+										%li 
+											%a(href="#") Escuelas deportivas
+										%li 
+											%a(href="#") Torneos
+						/ ECONOMIA 
+						%li.active-inside
+							%a(href="#") Economía
+							%ul.drop-inside
+								%li 
+									%a(href="#") Balances
+						%li.active-inside
+							%a(href="#") Empleo
+							%ul.drop-inside
+								%li 
+									%a(href="#") Empleo joven
+						%li 
+							%a(href="#") Obras públicas
+
+						%li.active-inside
+							%a(href="#") Salud y desarrollo social
+							%ul.drop-inside
+								%li 
+									%a(href="#") Materno infantil
+								%li 
+									%a(href="#") Prevención de adicciones
+								%li 
+									%a(href="#") Programa municipal de VIH/SIDA
+
+						/ SEGURIDAD 
+						%li 
+							%a(href="#") Seguridad
+
+						/ SERVICIOS EDUCATIVOS 
+						%li.active-inside
+							%a(href="#") Servicios educativos
+							%ul.drop-inside
+								%li 
+									%a(href="#") Colegios y jardines privados en San Fernando
+								%li 
+									%a(href="#") Colegios y jardines públicos en San Fernando
+								%li 
+									%a(href="#") Estudios de nivel medio y superior
+								%li 
+									%a(href="#") Nivel inicial, primario y secundario
+								%li 
+									%a(href="#") Unidades de desarrollo infantil
+								%li 
+									%a(href="#") Discapacidad
+							
+						%li.active-inside
+							%a(href="#") Atención al vecino
+							%ul.drop-inside
+								%li 
+									%a(href="#") OMIC
+								%li 
+									%a(href="#") UFRACC
+					/ PRENSA 
+					%ul.dropdown.prensa
+						%li.active
+							%a(style="font-size:18px;" href="#")Prensa
+						%li 
+							%a(href="#") Agenda para medios
+						%li 
+							%a(href="#") Medios locales
+						%li 
+							%a(href="#") Boletines oficiales
+					
+
+					%li.agenda
+						%a(style="font-size:18px;" href="#") Agenda
+					%li.noticia
+						= link_to 'Noticias'
+					%li
+						%a(style="font-size:18px;" href="#")Galería
+					%li.contacto
+						%a(style="font-size:18px;" href="#")Contacto
+				
+				.search
+					%form
+						%input(type="text" name="palabra" placeholder="Buscar")
+						%input(type="submit" id="search-submit" value="Buscar")
