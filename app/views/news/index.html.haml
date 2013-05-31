@@ -1,17 +1,17 @@
-#content
-	#content-inside
-		.top.top-section
-			%h1 noticias
-			.cierre-oscuro
-		.left
-			.grid-8-12
-				.item
-					- @news.each do |news|
-						.ph
-							= image_tag(news.images.first.file.url(:large))
-						.data
-							%h4 #{news.title}
-							%h5 '.$dateNewsImplode.
-							%p #{news.subtitle}
-							= link_to('Leer más', news_path(news.id),:class => "button")
-				#bandpagina
+.top.top-section
+	%h1 noticias
+	.cierre-oscuro
+.left
+	.grid-8-12
+		- @news.each do |news|
+			.item
+				.ph
+					= image_tag(news.images.first.file.url(:large))
+				.data
+					%h4 #{news.title}
+					%h5 #{I18n.l(news.date, :format => '%d %B %Y')}
+					%p #{news.subtitle}
+					= link_to('Leer más', news_path(news.id),:class => "button")
+		#bandpagina
+		- if @news.respond_to?(:num_pages)
+			= paginate @news, :window => 3

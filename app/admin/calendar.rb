@@ -3,7 +3,7 @@ ActiveAdmin.register Calendar do
   index do
     column :title
     column :subtitle
-    column :created_at
+    column :fecha
     default_actions
   end
 

@@ -16,12 +16,12 @@
 			#menu
 				%ul
 					%li 
-						%a(style="font-size:18px;" href="#") Inicio
+						= link_to 'Inicio', root_path
 					%ul.dropdown.ciudad 
 						%li.active
-							%a(style="font-size:18px;" href="#") La ciudad 
+							= link_to 'La ciudad', '' 
 						%li.active-inside
-							%a(href="#") El Delta
+							= link_to 'El Delta',''
 							%ul.drop-inside
 								%li 
 									%a(href="#")Clima y suelo
@@ -37,7 +37,7 @@
 									%a(href="#") Sección Islas del Delta
 						/ NAUTICA
 						%li.active-inside
-							%a (href="#") Náutica
+							%a(href="#") Náutica
 							%ul.drop-inside
 								%li 
 									%a(href="#") alón náutico
@@ -120,7 +120,7 @@
 					/GOBIERNO 
 					%ul.dropdown.gobierno
 						%li.active
-							%a(style="font-size:18px;" href="#") Gobierno
+						= link_to 'Gobierno', ''
 						%li 
 							%a(href="#") Intendencia
 						/ AUTORIDADES 
@@ -226,7 +226,7 @@
 					/ PRENSA 
 					%ul.dropdown.prensa
 						%li.active
-							%a(style="font-size:18px;" href="#")Prensa
+							= link_to 'Prensa', ''
 						%li 
 							%a(href="#") Agenda para medios
 						%li 
@@ -236,13 +236,13 @@
 					
 
 					%li.agenda
-						%a(style="font-size:18px;" href="#") Agenda
+						= link_to 'Agenda', calendars_path
 					%li.noticia
-						= link_to 'Noticias'
+						= link_to 'Noticias', news_index_path
 					%li
-						%a(style="font-size:18px;" href="#")Galería
+						= link_to 'Galería', ''
 					%li.contacto
-						%a(style="font-size:18px;" href="#")Contacto
+						= link_to 'Contacto', ''
 				
 				.search
 					%form

@@ -1,6 +1,8 @@
 class NewsController < InheritedResources::Base
 	def index
-		@news = News.all
+		@news = Kaminari.paginate_array(News.order("date DESC").all*30).page(params[:page]).per(10)
+
+
 	end
 	def show
 		@news = News.find(params[:id])

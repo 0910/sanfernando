@@ -1,7 +1,17 @@
-%h1 Listing calendars
-
-
-- @calendars.each do |calendar|
-  %tr
-    %td
-      = link_to calendar.title, calendar
+.top.top-section 
+	%h1 agenda de mes actual
+	= form_tag({:action => :index}, :class => "meses") do
+		= select_tag "months", options_for_select((@months), I18n.l(Date.today, :format => '%B').humanize)
+		= submit_tag "Consultar", :class => 'button'
+	.cierre-oscuro 
+.left 
+	.grid-8-12
+		- (@calendars*3).each do |calendar|
+			.grid-4-12
+				.item.agenda
+					.ph
+						= image_tag(calendar.images.first.file.url(:small))
+					.date
+						%h1 #{I18n.l(calendar.fecha, :format => '%d %B %Y')}
+					.data
+						%h4 #{calendar.title}

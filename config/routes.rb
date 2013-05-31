@@ -1,7 +1,6 @@
 Sanfernando::Application.routes.draw do
   resources :news, only: [:index, :show]
-
-  resources :calendars
+  resources :calendars, only: [:index]
   root to: 'home#index'
 
   ActiveAdmin.routes(self)
