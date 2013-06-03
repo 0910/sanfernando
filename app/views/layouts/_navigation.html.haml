@@ -2,11 +2,11 @@
 #fb-root
 :javascript
 	(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
-	  fjs.parentNode.insertBefore(js, fjs);
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));
 
 #main
@@ -24,97 +24,97 @@
 							= link_to 'El Delta',''
 							%ul.drop-inside
 								%li 
-									%a(href="#")Clima y suelo
+									= link_to 'Clima y suelo', sections_path(:id => 'climaysuelo')
 								%li 
-									%a(href="#")Curiosidades del Delta
+									= link_to 'Curiosidades del Delta', sections_path(:id => '')
 								%li 
-									%a(href="#") Flora y fauna
+									= link_to 'Flora y fauna', sections_path(:id => '')
 								%li 
-									%a(href="#") Producción sustentable
+									= link_to 'Producción sustentable', sections_path(:id => '')
 								%li 
-									%a(href="#") Reserva de biosfera
+									= link_to 'Reserva de biosfera', sections_path(:id => '')
 								%li 
-									%a(href="#") Sección Islas del Delta
+									= link_to 'Sección Islas del Delta', sections_path(:id => '')
 						/ NAUTICA
 						%li.active-inside
-							%a(href="#") Náutica
+							= link_to 'Náutica'
 							%ul.drop-inside
 								%li 
-									%a(href="#") alón náutico
+									= link_to 'Salón náutico', sections_path(:id => '')
 								%li 
-									%a(href="#") Consorcio parque náutico
+									= link_to 'Consorcio parque náutico', sections_path(:id => 'consorcioparquenautico')
 								%li 
-									%a(href="#") Clubes, guarderías y marinas
+									= link_to 'Clubes, guarderías y marinas', sections_path(:id => 'clubesymarinas')
 								%li 
-									%a(href="#") Industria
+									= link_to 'Industria', sections_path(:id => '')
 							
 						/ TELEFONOS 
 						%li.active-inside
-							%a(href="#") Teléfonos útiles
+							= link_to 'Teléfonos útiles'
 							%ul.drop-inside
 								%li 
-									%a(href="#") Oficinas municipales
+									= link_to 'Oficinas municipales', sections_path(:id => '')
 								%li 
-									%a(href="#") Salud
+									= link_to 'Salud', sections_path(:id => '')
 								%li 
-									%a (href="#") Seguridad
+									=link_to 'Seguridad', sections_path(:id => '')
 								%li 
-									%a (href="#") Servicios básicos
+									=link_to 'Servicios básicos', sections_path(:id => '')
 							
 						/ TURISMO 
 						%li.active-inside
-							%a(href="#") Turismo
+							= link_to 'Turismo'
 							%ul.drop-inside
 								%li 
-									%a(href="#") Accesos y agencias de turismo
+									= link_to 'Accesos y agencias de turismo', sections_path(:id => 'accesosyagencias')
 								%li 
-									%a(href="#") Aeropuerto internacional
+									= link_to 'Aeropuerto internacional', sections_path(:id => 'aeropuertointernacional')
 								%li 
-									%a(href="#") Ecoturismo y pesca deportiva
+									= link_to 'Ecoturismo y pesca deportiva', sections_path(:id => '')
 								%li 
-									%a(href="#") Gastronomía
+									= link_to 'Gastronomía', sections_path(:id => '')
 								%li 
-									%a(href="#") Hospedaje
+									= link_to 'Hospedaje', sections_path(:id => '')
 							
 						/ SITIOS DE INTERES 
 						%li.active-inside
-							%a(href="#") Sitios de interés
+							= link_to 'Sitios de interés'
 							%ul.drop-inside
 								%li 
-									%a(href="#") Costaneras públicas
+									= link_to 'Costaneras públicas', sections_path(:id => '')
 								%li 
-									%a(href="#") Ferias artesanales
+									= link_to 'Ferias artesanales', sections_path(:id => '')
 								%li 
-									%a(href="#") Lugares históricos
+									= link_to 'Lugares históricos', sections_path(:id => '')
 								%li 
-									%a(href="#") Plazas y parques
+									= link_to 'Plazas y parques', sections_path(:id => '')
 								%li 
-									%a(href="#") Teatros
+									= link_to 'Teatros', sections_path(:id => '')
 							
 						/ ESTADISTICAS Y CENSOS 
 						%li 
-							%a(href="#") Estadísticas y censos
+							= link_to 'Estadísticas y censos'
 						/ HISTORIA 
 						%li.active-inside
-							%a(href="#") Historia
+							= link_to 'Historia'
 							%ul.drop-inside
 								%li 
-									%a(href="#") Bandera y escudo
+									= link_to 'Bandera y escudo', sections_path(:id => 'banderayescudo')
 								%li 
-									%a(href="#") Localidades del partido
+									= link_to 'Localidades del partido', sections_path(:id => '')
 								%li 
-									%a(href="#") Orígenes del municipio
+									= link_to 'Orígenes del municipio', sections_path(:id => '')
 								%li 
-									%a(href="#") Puntos principales del crecimiento de San Fernando
+									= link_to 'Puntos principales del crecimiento de San Fernando', sections_path(:id => '')
 								%li 
-									%a(href="#") Rasgos característicos de San Fernando
+									= link_to 'Rasgos característicos de San Fernando', sections_path(:id => '')
 							
 						/ DATOS UTILES 
 						%li 
-							%a(href="#") Datos útiles
+							= link_to 'Datos útiles', sections_path(:id => '')
 						/ MEDIO AMBIENTE 
 						%li 
-							%a(href="#") Medio ambiente
+							= link_to 'Medio ambiente', sections_path(:id => '')
 					
 
 					/GOBIERNO 
@@ -122,117 +122,117 @@
 						%li.active
 						= link_to 'Gobierno', ''
 						%li 
-							%a(href="#") Intendencia
+							= link_to 'Intendencia'
 						/ AUTORIDADES 
 						%li.active-inside
-							%a(href="#") Autoridades
+							= link_to 'Autoridades'
 							%ul.drop-inside
 								%li 
-									%a(href="#") Secretaría de desarrollo social, medio ambiente y salud pública
+									= link_to 'Secretaría de desarrollo social, medio ambiente y salud pública', sections_path(:id => 'autoridades1')
 								%li 
-									%a(href="#") Secretaría de economía
+									= link_to 'Secretaría de economía', sections_path(:id => 'autoridades2')
 								%li 
-									%a(href="#") Secretaría de educación, cultura y contención social
+									= link_to 'Secretaría de educación, cultura y contención social', sections_path(:id => 'autoridades3')
 								%li 
-									%a(href="#") Secretaría de gobierno
+									= link_to 'Secretaría de gobierno', sections_path(:id => 'autoridades4')
 								%li 
-									%a(href="#") Secretaría de obras e infraestructura pública
+									= link_to 'Secretaría de obras e infraestructura pública', sections_path(:id => 'autoridades5')
 								%li 
-									%a(href="#") Secretaría de privada y coordinación 
+									= link_to 'Secretaría de privada y coordinación', sections_path(:id => 'autoridades6')
 								%li 
-									%a(href="#") Secretaría de protección ciudadana
+									= link_to 'Secretaría de protección ciudadana', sections_path(:id => 'autoridades7')
 							
 						/ CULTURA Y DEPORTE 
 						%li.active-inside
-							%a(href="#") Cultura y deporte
+							= link_to 'Cultura y deporte'
 							%ul.drop-inside
 								%li.inside-1
-									%a(href="#") Cultura
+									= link_to 'Cultura'
 									%ul.drop-inside-2.inside-1-li
 										%li 
-											%a(href="#") Bibliotecas populares
+											= link_to 'Bibliotecas populares', sections_path(:id => 'bibliotecaspopulares')
 										%li 
-											%a(href="#") Centros culturales
+											= link_to 'Centros culturales', sections_path(:id => 'centrosculturales')
 										%li 
-											%a(href="#") Escuela de formación artística
-						%li 
-							%a(href="#") Talleres culturales
+											= link_to 'Escuela de formación artística', sections_path(:id => '')
+										%li 
+											= link_to 'Talleres culturales'
 							%ul.drop-inside
 								%li.inside-2
-									%a(href="#") Deportes
+									= link_to 'Deportes'
 									%ul.drop-inside-2.inside-2-li
 										%li 
-											%a(href="#") CE.DE.C. Nº1
+											= link_to 'CE.DE.C. Nº1', sections_path(:id => 'cedec1')
 										%li 
-											%a(href="#") CE.DE.C. Nº2
+											= link_to 'CE.DE.C. Nº2', sections_path(:id => 'cedec2')
 										%li 
-											%a(href="#") CE.DE.C. Nº3
+											= link_to 'CE.DE.C. Nº3', sections_path(:id => 'cedec3')
 										%li 
-											%a(href="#") Escuelas deportivas
+											= link_to 'Escuelas deportivas', sections_path(:id => '')
 										%li 
-											%a(href="#") Torneos
+											= link_to 'Torneos', sections_path(:id => '')
 						/ ECONOMIA 
 						%li.active-inside
-							%a(href="#") Economía
+							= link_to 'Economía'
 							%ul.drop-inside
 								%li 
-									%a(href="#") Balances
+									= link_to 'Balances', sections_path(:id => 'balances')
 						%li.active-inside
-							%a(href="#") Empleo
+							= link_to 'Empleo'
 							%ul.drop-inside
 								%li 
-									%a(href="#") Empleo joven
+									= link_to 'Empleo joven', sections_path(:id => '')
 						%li 
-							%a(href="#") Obras públicas
+							= link_to 'Obras públicas', sections_path(:id => '')
 
 						%li.active-inside
-							%a(href="#") Salud y desarrollo social
+							= link_to 'Salud y desarrollo social'
 							%ul.drop-inside
 								%li 
-									%a(href="#") Materno infantil
+									= link_to 'Materno infantil', sections_path(:id => '')
 								%li 
-									%a(href="#") Prevención de adicciones
+									= link_to 'Prevención de adicciones', sections_path(:id => '')
 								%li 
-									%a(href="#") Programa municipal de VIH/SIDA
+									= link_to 'Programa municipal de VIH/SIDA', sections_path(:id => '')
 
 						/ SEGURIDAD 
 						%li 
-							%a(href="#") Seguridad
+							= link_to 'Seguridad'
 
 						/ SERVICIOS EDUCATIVOS 
 						%li.active-inside
-							%a(href="#") Servicios educativos
+							= link_to 'Servicios educativos', sections_path(:id => '')
 							%ul.drop-inside
 								%li 
-									%a(href="#") Colegios y jardines privados en San Fernando
+									= link_to 'Colegios y jardines privados en San Fernando', sections_path(:id => 'colegiosyjardinesprivados')
 								%li 
-									%a(href="#") Colegios y jardines públicos en San Fernando
+									= link_to 'Colegios y jardines públicos en San Fernando', sections_path(:id => 'colegiosyjardinespublicos')
 								%li 
-									%a(href="#") Estudios de nivel medio y superior
+									= link_to 'Estudios de nivel medio y superior', sections_path(:id => '')
 								%li 
-									%a(href="#") Nivel inicial, primario y secundario
+									= link_to 'Nivel inicial, primario y secundario', sections_path(:id => '')
 								%li 
-									%a(href="#") Unidades de desarrollo infantil
+									= link_to 'Unidades de desarrollo infantil', sections_path(:id => '')
 								%li 
-									%a(href="#") Discapacidad
+									= link_to 'Discapacidad', sections_path(:id => '')
 							
 						%li.active-inside
-							%a(href="#") Atención al vecino
+							= link_to 'Atención al vecino', sections_path(:id => 'atencionalvecino')
 							%ul.drop-inside
 								%li 
-									%a(href="#") OMIC
+									= link_to 'OMIC', sections_path(:id => '')
 								%li 
-									%a(href="#") UFRACC
+									= link_to 'UFRACC', sections_path(:id => '')
 					/ PRENSA 
 					%ul.dropdown.prensa
 						%li.active
 							= link_to 'Prensa', ''
 						%li 
-							%a(href="#") Agenda para medios
+							= link_to 'Agenda para medios', sections_path(:id => 'agendamedios')
 						%li 
-							%a(href="#") Medios locales
+							= link_to 'Medios locales', sections_path(:id => '')
 						%li 
-							%a(href="#") Boletines oficiales
+							= link_to 'Boletines oficiales', sections_path(:id => 'boletinesoficiales')
 					
 
 					%li.agenda

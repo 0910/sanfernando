@@ -1,0 +1,73 @@
+		<div class="top top-section">
+			<h1>ISLAS DEL DELTA</h1>
+			<div class="cierre-oscuro"></div>
+		</div>
+
+<!-- LEFT --><div class="left">
+			<div class="grid-8-12">
+				<div class="news-inside">
+
+					<div class="item">
+
+		<!-- SLIDER --><div class="slider-contenido">
+							<a href="#" class="prevContenido"></a>
+							<a href="#" class="nextContenido"></a>
+							<div class="container">
+								<div class="ph">
+									<img src="contenido/img/islasdeldelta1.jpg" />
+								</div>
+								<div class="ph">
+									<img src="contenido/img/islasdeldelta2.jpg" />
+								</div>
+								<div class="ph">
+									<img src="contenido/img/islasdeldelta3.jpg" />
+								</div>
+								<div class="ph">
+									<img src="contenido/img/islasdeldelta4.jpg" />
+								</div>
+								<div class="ph">
+									<img src="contenido/img/islasdeldelta5.jpg" />
+								</div>
+								<div class="ph">
+									<img src="contenido/img/islasdeldelta6.jpg" />
+								</div>
+								<div class="ph">
+									<img src="contenido/img/islasdeldelta7.jpg" />
+								</div>
+							</div>
+		<!-- END SLIDER --></div>
+
+						<div class="data">
+							<p><strong>Las islas del Delta</strong>, se encuentran en la porción final de la Región conformando un delta en fase de crecimiento sobre el estuario del Río de la Plata. La altura sobre el nivel del mar de las islas oscila entre los 0,5 y 3 metros.
+La zona puede ser definida como un extenso humedal costero, sujeto a mareas de agua dulce. Los humedales son ambientes cuyo sustrato permanece inundado o saturado con agua durante importantes períodos del año. Este tipo de ecosistema posee propiedades únicas que lo diferencian de los ambientes terrestres y acuáticos, debido a que se trata de sistemas donde el régimen hidrológico es el principal condicionante de la estructura y sus funciones ecológicas.
+Desde el punto de vista de los patrones de paisaje, éstos se encuentran definidos por la coexistencia de elementos naturales con otros derivados de la intervención del hombre. Entre los ambientes naturales podemos mencionar pajonales, bosques de seibo, parches relictuales de Monte Blanco, totorales y juncales. En la actualidad, una importante porción se encuentra ocupada por ambientes derivados de la actividad del hombre: predios turísticos y recreativos, plantaciones de frutales, formio, mimbre y forestaciones de sauce y álamo. Dado que algunas de estas actividades fueron abandonadas en distintos momentos de la historia del último siglo, se hallan en la actualidad numerosos ejemplos de ambientes que son resultado de la dinámica natural sobre antiguas áreas de intervención humana, denominados neoecosistemas.<br/><br/>
+ 
+ 
+<strong>En cuanto a la historia de las Islas</strong>, podemos establecer que en ellas se instalaron las primeras corrientes de inmigrantes europeos. Vascos, franceses e italianos, entre otros, se fueron asentando allí para trabajar y formar sus familias. De ahí, la importancia que tuvo en su momento el puerto del Canal de San Fernando.
+Recientemente, se realizó una importante obra de electrificación plasmada en más de 100km de líneas de media tensión. Las mismas, abastecen los domicilios particulares de los productores y del personal que trabaja en las islas. Además, sirven para mejorar el trabajo en las quintas y la estructura de servicios (recreos, estaciones de servicios, etc.), entre otras cosas.
+La importancia turística del Delta, fue destacada por Domingo Faustino Sarmiento, quien llegó a tener una casa en sus Islas. Hacia fines del Siglo XIX, numerosas familias adineradas de Buenos Aires tenían, aquí, sus propiedades de veraneo: Vicente Fidel López, Marcos Sastre, Eduardo Madero, Ernesto Tornquist. Actualmente, cuanta con un hospedaje que llega a los quince centros turísticos.</p>
+<p>En estos últimos años, Las islas del Delta, lograron un importante desarrollo en lo que refiere a centros de prevención y de asistencia de la salud. Los mismos son:</p>
+<ul>
+	<li class="bullet"><p>Hospital Dr. René Favaloro, ubicado en el Canal 4 y Paraná Miní.<br/>
+	 Teléfonos 4728-0270/1356 Fax 4728-5270. Guardia las 24 Hs. <br/>
+	 Servicio Emergencia lancha Ambulancia.</p></li>
+	<li class="bullet"><p>Hospital Ramón Carrillo Chaná, de Arroyo Chaná y Paraná Miní.<br/> 
+		Teléfonos 4728-2434/1391 Fax 4728-7434. Guardia las 24 Hs. <br/>
+		Servicio Emergencia lancha Ambulancia.</p></li>
+	<li class="bullet"><p>Hospital Dr. Oscar do Porto, emplazado en el Río Carabelas y el Paraná de las Palmas.<br/>
+	 Teléfonos 4728-0026/1338 Fax 4728-5026. Guardia las 24 Hs. <br/>
+	 Servicio Emergencia lancha Ambulancia. </p></li>
+
+	<li class="bullet"><p>Centro de Salud Absalón Rojas, con sede en el Arroyo Felicaria.<br/>
+	 Tel. 4728-2386. Atención de Martes a Sábados de 9:30 Hs. a 14:30 Hs.</p></li>
+</ul>
+<p>Para el traslado de pacientes en situaciones de riesgo, los mismos cuentan con tres lanchas ambulancias. Además, estos Hospitales mantienen un nexo con diferentes Registros Civiles para realizar campañas de vacunación y entregar los DNI de los niños recién nacidos a sus padres.
+Otra ventaja que poseen los vecinos de las Islas del Delta es la existencia de psicólogos, trabajadores sociales y agentes multiplicadores quienes, por los diversos ríos y arroyos, están en comunicación con la población para la solución de cualquier problemática local.</p>
+
+<!-- SHARE -->				<? include "inc/share.php";?>
+						</div>
+					</div>
+
+<!-- END NEWS INSIDE --></div>
+<!-- END GRID -->	</div>
+<!-- END LEFT --></div>

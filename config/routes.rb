@@ -3,6 +3,8 @@ Sanfernando::Application.routes.draw do
   resources :calendars, only: [:index]
   root to: 'home#index'
 
+  resources :sections, only: [:index, :show]
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
