@@ -55,3 +55,4 @@ gem "simple_form"
 
 gem "cocaine", "= 0.3.2"
 gem 'rmagick'
+gem 'unicorn'
