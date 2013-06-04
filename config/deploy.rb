@@ -10,6 +10,8 @@ load "config/recipes/nodejs"
 
 server "74.208.90.50", :web, :app, :db, primary: true
 
+
+set :domain, 'sanfertest.com.ar'
 set :user, "root"
 set :application, "sanfernando"
 set :deploy_to, "/var/www/applications/#{application}"
