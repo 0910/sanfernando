@@ -14,7 +14,7 @@
 										%p #{news.subtitle}
 										= link_to 'Leer más', news_path(news.id), :class => 'button'
 			.grid-4-12
-				- (@news*4).each do |news|		
+				- (@news).each do |news|		
 					.ph.thumb
 						= image_tag(news.images.first.file.url(:small))
 						.over
