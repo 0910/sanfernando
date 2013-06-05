@@ -1,0 +1,11 @@
+@mixin select($section){
+  body.#{$section}{
+    #nav .#{$section}{
+    	color: #F7931E;
+    }
+  }
+}
+
+@each $section in (home, sections_index, sections_gobierno, sections_prensa, news, calendars) {
+  @include select($section);
+}

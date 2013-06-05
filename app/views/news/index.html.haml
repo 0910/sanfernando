@@ -6,7 +6,8 @@
 		- @news.each do |news|
 			.item
 				.ph
-					= image_tag(news.images.first.file.url(:large))
+					- unless news.images.empty?
+						= image_tag(news.images.first.file.url(:small))
 				.data
 					%h4 #{news.title}
 					%h5 #{I18n.l(news.date, :format => '%d %B %Y')}

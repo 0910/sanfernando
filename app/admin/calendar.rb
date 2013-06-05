@@ -20,7 +20,7 @@ ActiveAdmin.register Calendar do
   form_with_images do |f|
     f.input :title, as: :string
     f.input :subtitle, as: :string
-    f.input :info
+    f.input :info, as: :text
     f.input :fecha, as: :datepicker
     f.input :estado, :as => :select, :collection => ["mostrar", "oculto"], :selected => "mostrar"
   end  

@@ -16,10 +16,10 @@
 			#menu
 				%ul
 					%li 
-						= link_to 'Inicio', root_path
+						= link_to 'Inicio', root_path, :class => 'home'
 					%ul.dropdown.ciudad 
 						%li.active
-							= link_to 'La ciudad', '' 
+							= link_to 'La ciudad', '',:class => 'sections' 
 						%li.active-inside
 							= link_to 'El Delta',''
 							%ul.drop-inside
@@ -120,124 +120,124 @@
 					/GOBIERNO 
 					%ul.dropdown.gobierno
 						%li.active
-						= link_to 'Gobierno', ''
+						= link_to 'Gobierno', '#', :class => 'sections_gobierno'
 						%li 
-							= link_to 'Intendencia', sections_path(:id => 'intendencia')
+							= link_to 'Intendencia', gobierno_path(:id => 'intendencia')
 						/ AUTORIDADES 
 						%li.active-inside
 							= link_to 'Autoridades'
 							%ul.drop-inside
 								%li 
-									= link_to 'Secretaría de desarrollo social, medio ambiente y salud pública', sections_path(:id => 'autoridades1')
+									= link_to 'Secretaría de desarrollo social, medio ambiente y salud pública', gobierno_path(:id => 'autoridades1')
 								%li 
-									= link_to 'Secretaría de economía', sections_path(:id => 'autoridades2')
+									= link_to 'Secretaría de economía', gobierno_path(:id => 'autoridades2')
 								%li 
-									= link_to 'Secretaría de educación, cultura y contención social', sections_path(:id => 'autoridades3')
+									= link_to 'Secretaría de educación, cultura y contención social', gobierno_path(:id => 'autoridades3')
 								%li 
-									= link_to 'Secretaría de gobierno', sections_path(:id => 'autoridades4')
+									= link_to 'Secretaría de gobierno', gobierno_path(:id => 'autoridades4')
 								%li 
-									= link_to 'Secretaría de obras e infraestructura pública', sections_path(:id => 'autoridades5')
+									= link_to 'Secretaría de obras e infraestructura pública', gobierno_path(:id => 'autoridades5')
 								%li 
-									= link_to 'Secretaría de privada y coordinación', sections_path(:id => 'autoridades6')
+									= link_to 'Secretaría de privada y coordinación', gobierno_path(:id => 'autoridades6')
 								%li 
-									= link_to 'Secretaría de protección ciudadana', sections_path(:id => 'autoridades7')
+									= link_to 'Secretaría de protección ciudadana', gobierno_path(:id => 'autoridades7')
 							
 						/ CULTURA Y DEPORTE 
 						%li.active-inside
 							= link_to 'Cultura y deporte'
 							%ul.drop-inside
 								%li.inside-1
-									= link_to 'Cultura', sections_path(:id => 'cultura')
+									= link_to 'Cultura', gobierno_path(:id => 'cultura')
 									%ul.drop-inside-2.inside-1-li
 										%li 
-											= link_to 'Bibliotecas populares', sections_path(:id => 'bibliotecaspopulares')
+											= link_to 'Bibliotecas populares', gobierno_path(:id => 'bibliotecaspopulares')
 										%li 
-											= link_to 'Centros culturales', sections_path(:id => 'centrosculturales')
+											= link_to 'Centros culturales', gobierno_path(:id => 'centrosculturales')
 										%li 
-											= link_to 'Escuela de formación artística', sections_path(:id => 'escuelaartistica')
+											= link_to 'Escuela de formación artística', gobierno_path(:id => 'escuelaartistica')
 										%li 
-											= link_to 'Talleres culturales', sections_path(:id => "talleresculturales")
+											= link_to 'Talleres culturales', gobierno_path(:id => "talleresculturales")
 								%li.inside-2
-									= link_to 'Deportes', sections_path(:id => 'deportes')
+									= link_to 'Deportes', gobierno_path(:id => 'deportes')
 									%ul.drop-inside-2.inside-2-li
 										%li 
-											= link_to 'CE.DE.C. Nº1', sections_path(:id => 'cedec1')
+											= link_to 'CE.DE.C. Nº1', gobierno_path(:id => 'cedec1')
 										%li 
-											= link_to 'CE.DE.C. Nº2', sections_path(:id => 'cedec2')
+											= link_to 'CE.DE.C. Nº2', gobierno_path(:id => 'cedec2')
 										%li 
-											= link_to 'CE.DE.C. Nº3', sections_path(:id => 'cedec3')
+											= link_to 'CE.DE.C. Nº3', gobierno_path(:id => 'cedec3')
 										%li 
-											= link_to 'Escuelas deportivas', sections_path(:id => 'escuelasdeportivas')
+											= link_to 'Escuelas deportivas', gobierno_path(:id => 'escuelasdeportivas')
 										%li 
-											= link_to 'Torneos', sections_path(:id => 'torneos')
+											= link_to 'Torneos', gobierno_path(:id => 'torneos')
 						/ ECONOMIA 
 						%li.active-inside
-							= link_to 'Economía', sections_path(:id => 'economia')
+							= link_to 'Economía', gobierno_path(:id => 'economia')
 							%ul.drop-inside
 								%li 
-									= link_to 'Balances', sections_path(:id => 'balances')
+									= link_to 'Balances', gobierno_path(:id => 'balances')
 						%li.active-inside
-							= link_to 'Empleo', sections_path(:id => 'empleo')
+							= link_to 'Empleo', gobierno_path(:id => 'empleo')
 							%ul.drop-inside
 								%li 
-									= link_to 'Empleo joven', sections_path(:id => 'empleojoven')
+									= link_to 'Empleo joven', gobierno_path(:id => 'empleojoven')
 						%li 
-							= link_to 'Obras públicas', sections_path(:id => 'obraspublicas')
+							= link_to 'Obras públicas', gobierno_path(:id => 'obraspublicas')
 
 						%li.active-inside
-							= link_to 'Salud y desarrollo social', sections_path(:id => 'saludydesarrollo')
+							= link_to 'Salud y desarrollo social', gobierno_path(:id => 'saludydesarrollo')
 							%ul.drop-inside
 								%li 
-									= link_to 'Materno infantil', sections_path(:id => 'maternoinfantil')
+									= link_to 'Materno infantil', gobierno_path(:id => 'maternoinfantil')
 								%li 
-									= link_to 'Prevención de adicciones', sections_path(:id => 'prevenciondeadicciones')
+									= link_to 'Prevención de adicciones', gobierno_path(:id => 'prevenciondeadicciones')
 								%li 
-									= link_to 'Programa municipal de VIH/SIDA', sections_path(:id => 'programavih')
+									= link_to 'Programa municipal de VIH/SIDA', gobierno_path(:id => 'programavih')
 
 						/ SEGURIDAD 
 						%li 
-							= link_to 'Seguridad', sections_path(:id => '')
+							= link_to 'Seguridad', gobierno_path(:id => '')
 
 						/ SERVICIOS EDUCATIVOS 
 						%li.active-inside
-							= link_to 'Servicios educativos', sections_path(:id => 'servicioseducativos')
+							= link_to 'Servicios educativos', gobierno_path(:id => 'servicioseducativos')
 							%ul.drop-inside
 								%li 
-									= link_to 'Colegios y jardines privados en San Fernando', sections_path(:id => 'colegiosyjardinesprivados')
+									= link_to 'Colegios y jardines privados en San Fernando', gobierno_path(:id => 'colegiosyjardinesprivados')
 								%li 
-									= link_to 'Colegios y jardines públicos en San Fernando', sections_path(:id => 'colegiosyjardinespublicos')
+									= link_to 'Colegios y jardines públicos en San Fernando', gobierno_path(:id => 'colegiosyjardinespublicos')
 								%li 
-									= link_to 'Estudios de nivel medio y superior', sections_path(:id => 'estudiosmedios')
+									= link_to 'Estudios de nivel medio y superior', gobierno_path(:id => 'estudiosmedios')
 								%li 
-									= link_to 'Nivel inicial, primario y secundario', sections_path(:id => 'nivelinicial')
+									= link_to 'Nivel inicial, primario y secundario', gobierno_path(:id => 'nivelinicial')
 								%li 
-									= link_to 'Unidades de desarrollo infantil', sections_path(:id => 'unidadesdedesarrollo')
+									= link_to 'Unidades de desarrollo infantil', gobierno_path(:id => 'unidadesdedesarrollo')
 								%li 
-									= link_to 'Discapacidad', sections_path(:id => 'discapacidad')
+									= link_to 'Discapacidad', gobierno_path(:id => 'discapacidad')
 							
 						%li.active-inside
-							= link_to 'Atención al vecino', sections_path(:id => 'atencionalvecino')
+							= link_to 'Atención al vecino', gobierno_path(:id => 'atencionalvecino')
 							%ul.drop-inside
 								%li 
-									= link_to 'OMIC', sections_path(:id => 'omic')
+									= link_to 'OMIC', gobierno_path(:id => 'omic')
 								%li 
-									= link_to 'UFRACC', sections_path(:id => 'ufracc')
+									= link_to 'UFRACC', gobierno_path(:id => 'ufracc')
 					/ PRENSA 
 					%ul.dropdown.prensa
 						%li.active
-							= link_to 'Prensa', sections_path(:id => 'prensa')
+							= link_to 'Prensa', prensa_path(:id => 'prensa'), :class => 'sections_prensa'
 						%li 
-							= link_to 'Agenda para medios', sections_path(:id => 'agendamedios')
+							= link_to 'Agenda para medios', prensa_path(:id => 'agendamedios')
 						%li 
-							= link_to 'Medios locales', sections_path(:id => 'medioslocales')
+							= link_to 'Medios locales', prensa_path(:id => 'medioslocales')
 						%li 
-							= link_to 'Boletines oficiales', sections_path(:id => 'boletinesoficiales')
+							= link_to 'Boletines oficiales', prensa_path(:id => 'boletinesoficiales')
 					
 
 					%li.agenda
-						= link_to 'Agenda', calendars_path
+						= link_to 'Agenda', calendars_path, :class => 'calendars'
 					%li.noticia
-						= link_to 'Noticias', news_index_path
+						= link_to 'Noticias', news_index_path, :class => 'news'
 					/ %li
 					=# link_to 'Galería', ''
 					/ %li.contacto
