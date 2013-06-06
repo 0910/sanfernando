@@ -75,9 +75,11 @@ body #has_many_images{
     }
   }
 }
-body.active_admin{
-	img{
-		width: 15%;
-		margin-right: .5em;
+body.show{
+	#active_admin_content{
+		img{
+			width: 15%;
+			margin-right: .5em;
+		}
 	}
 }
