@@ -11,239 +11,52 @@
 
 #main
 	#top
-		#nav
-			#logo
-			#menu
-				%ul
-					%li 
-						= link_to 'Inicio', root_path, :class => 'home'
-					%ul.dropdown.ciudad 
-						%li.active
-							= link_to 'La ciudad', '',:class => 'sections' 
-						%li.active-inside
-							= link_to 'El Delta',''
-							%ul.drop-inside
-								%li 
-									= link_to 'Clima y suelo', sections_path(:id => 'climaysuelo')
-								%li 
-									= link_to 'Curiosidades del Delta', sections_path(:id => 'curiosidadesdeldelta')
-								%li 
-									= link_to 'Flora y fauna', sections_path(:id => 'florayfauna')
-								%li 
-									= link_to 'Producción sustentable', sections_path(:id => 'produccionsustentable')
-								%li 
-									= link_to 'Reserva de biosfera', sections_path(:id => 'reservadebiosfera')
-								%li 
-									= link_to 'Sección Islas del Delta', sections_path(:id => 'islasdeldelta')
-						/ NAUTICA
-						%li.active-inside
-							= link_to 'Náutica'
-							%ul.drop-inside
-								%li 
-									= link_to 'Salón náutico', sections_path(:id => 'salonnautico')
-								%li 
-									= link_to 'Consorcio parque náutico', sections_path(:id => 'consorcioparquenautico')
-								%li 
-									= link_to 'Clubes, guarderías y marinas', sections_path(:id => 'clubesymarinas')
-								%li 
-									= link_to 'Industria', sections_path(:id => 'industrianautica')
-							
-						/ TELEFONOS 
-						%li.active-inside
-							= link_to 'Teléfonos útiles'
-							%ul.drop-inside
-								%li 
-									= link_to 'Oficinas municipales', sections_path(:id => 'oficinasmunicipales')
-								%li 
-									= link_to 'Salud', sections_path(:id => 'salud')
-								%li 
-									=link_to 'Seguridad', sections_path(:id => 'seguridad')
-								%li 
-									=link_to 'Servicios básicos', sections_path(:id => 'serviciosbasicos')
-							
-						/ TURISMO 
-						%li.active-inside
-							= link_to 'Turismo'
-							%ul.drop-inside
-								%li 
-									= link_to 'Accesos y agencias de turismo', sections_path(:id => 'accesosyagencias')
-								%li 
-									= link_to 'Aeropuerto internacional', sections_path(:id => 'aeropuertointernacional')
-								%li 
-									= link_to 'Ecoturismo y pesca deportiva', sections_path(:id => 'ecoturismo')
-								%li 
-									= link_to 'Gastronomía', sections_path(:id => 'gastronomia')
-								%li 
-									= link_to 'Hospedaje', sections_path(:id => 'hospedaje')
-							
-						/ SITIOS DE INTERES 
-						%li.active-inside
-							= link_to 'Sitios de interés'
-							%ul.drop-inside
-								%li 
-									= link_to 'Costaneras públicas', sections_path(:id => 'costaneraspublicas')
-								%li 
-									= link_to 'Ferias artesanales', sections_path(:id => 'feriasartesanales')
-								%li 
-									= link_to 'Lugares históricos', sections_path(:id => 'lugareshistoricos')
-								%li 
-									= link_to 'Plazas y parques', sections_path(:id => 'plazasyparques')
-								%li 
-									= link_to 'Teatros', sections_path(:id => 'teatros')
-							
-						/ ESTADISTICAS Y CENSOS 
-						%li 
-							= link_to 'Estadísticas y censos', sections_path(:id => 'estadisticasycensos')
-						/ HISTORIA 
-						%li.active-inside
-							= link_to 'Historia'
-							%ul.drop-inside
-								%li 
-									= link_to 'Bandera y escudo', sections_path(:id => 'banderayescudo')
-								%li 
-									= link_to 'Localidades del partido', sections_path(:id => 'localidades')
-								%li 
-									= link_to 'Orígenes del municipio', sections_path(:id => 'origenes')
-								%li 
-									= link_to 'Puntos principales del crecimiento de San Fernando', sections_path(:id => 'crecimiento')
-								%li 
-									= link_to 'Rasgos característicos de San Fernando', sections_path(:id => 'rasgoscaracteristicos')
-							
-						/ DATOS UTILES 
-						%li 
-							= link_to 'Datos útiles', sections_path(:id => 'datosutiles')
-						/ MEDIO AMBIENTE 
-						%li 
-							= link_to 'Medio ambiente', sections_path(:id => 'medioambiente')
-					
+		.navbar.navbar-inverse.navbar-fixed-top
+			.navbar-inner
+				.container
+					%button.btn.btn-navbar(type="button" data-toggle="collapse" data-target=".nav-collapse")
+						%span.icon-bar
+						%span.icon-bar
+						%span.icon-bar
+					.row-fluid	
+						%a.brand(href="#")
+					.nav-collapse.collapse
+						%ul.nav
+							%li.active
+								%a(href="#") Inicio
+							%li.dropdown
+								%a.dropdown-toggle(data-toggle="dropdown" href="#") La Ciudad
+								%ul.dropdown-menu
+									%li
+										%a(href="#") Actions
+									%li
+										%a(href="#") Actions
+									%li.dropdown-submenu
+										%a(href="#") Actions
+										%ul.dropdown-menu
+											%li
+												%a(href="#") Sub Actions
+											%li
+												%a(href="#") Sub Actions
+							%li.dropdown
+								%a.dropdown-toggle(data-toggle="dropdown" href="#") Gobierno
+								%ul.dropdown-menu
+									%li
+										%a(href="#") Actions
+										%a(href="#") Actions
+										%a(href="#") Actions
+							%li.dropdown
+								%a.dropdown-toggle(data-toggle="dropdown" href="#") Prensa
+								%ul.dropdown-menu
+									%li
+										%a(href="#") Actions
+										%a(href="#") Actions
+										%a(href="#") Actions
+							%li.dropdown
+								%a.dropdown-toggle(data-toggle="dropdown" href="#") Agenda
+							%li.dropdown
+								%a.dropdown-toggle(data-toggle="dropdown" href="#") Noticias
+							%li.dropdown
+								%a.dropdown-toggle(data-toggle="dropdown" href="#") Contacto
+					.nav-border
 
-					/GOBIERNO 
-					%ul.dropdown.gobierno
-						%li.active
-						= link_to 'Gobierno', '#', :class => 'sections_gobierno'
-						%li 
-							= link_to 'Intendencia', gobierno_path(:id => 'intendencia')
-						/ AUTORIDADES 
-						%li.active-inside
-							= link_to 'Autoridades'
-							%ul.drop-inside
-								%li 
-									= link_to 'Secretaría de desarrollo social, medio ambiente y salud pública', gobierno_path(:id => 'autoridades1')
-								%li 
-									= link_to 'Secretaría de economía', gobierno_path(:id => 'autoridades2')
-								%li 
-									= link_to 'Secretaría de educación, cultura y contención social', gobierno_path(:id => 'autoridades3')
-								%li 
-									= link_to 'Secretaría de gobierno', gobierno_path(:id => 'autoridades4')
-								%li 
-									= link_to 'Secretaría de obras e infraestructura pública', gobierno_path(:id => 'autoridades5')
-								%li 
-									= link_to 'Secretaría de privada y coordinación', gobierno_path(:id => 'autoridades6')
-								%li 
-									= link_to 'Secretaría de protección ciudadana', gobierno_path(:id => 'autoridades7')
-							
-						/ CULTURA Y DEPORTE 
-						%li.active-inside
-							= link_to 'Cultura y deporte'
-							%ul.drop-inside
-								%li.inside-1
-									= link_to 'Cultura', gobierno_path(:id => 'cultura')
-									%ul.drop-inside-2.inside-1-li
-										%li 
-											= link_to 'Bibliotecas populares', gobierno_path(:id => 'bibliotecaspopulares')
-										%li 
-											= link_to 'Centros culturales', gobierno_path(:id => 'centrosculturales')
-										%li 
-											= link_to 'Escuela de formación artística', gobierno_path(:id => 'escuelaartistica')
-										%li 
-											= link_to 'Talleres culturales', gobierno_path(:id => "talleresculturales")
-								%li.inside-2
-									= link_to 'Deportes', gobierno_path(:id => 'deportes')
-									%ul.drop-inside-2.inside-2-li
-										%li 
-											= link_to 'CE.DE.C. Nº1', gobierno_path(:id => 'cedec1')
-										%li 
-											= link_to 'CE.DE.C. Nº2', gobierno_path(:id => 'cedec2')
-										%li 
-											= link_to 'CE.DE.C. Nº3', gobierno_path(:id => 'cedec3')
-										%li 
-											= link_to 'Escuelas deportivas', gobierno_path(:id => 'escuelasdeportivas')
-										%li 
-											= link_to 'Torneos', gobierno_path(:id => 'torneos')
-						/ ECONOMIA 
-						%li.active-inside
-							= link_to 'Economía', gobierno_path(:id => 'economia')
-							%ul.drop-inside
-								%li 
-									= link_to 'Balances', gobierno_path(:id => 'balances')
-						%li.active-inside
-							= link_to 'Empleo', gobierno_path(:id => 'empleo')
-							%ul.drop-inside
-								%li 
-									= link_to 'Empleo joven', gobierno_path(:id => 'empleojoven')
-						%li 
-							= link_to 'Obras públicas', gobierno_path(:id => 'obraspublicas')
-
-						%li.active-inside
-							= link_to 'Salud y desarrollo social', gobierno_path(:id => 'saludydesarrollo')
-							%ul.drop-inside
-								%li 
-									= link_to 'Materno infantil', gobierno_path(:id => 'maternoinfantil')
-								%li 
-									= link_to 'Prevención de adicciones', gobierno_path(:id => 'prevenciondeadicciones')
-								%li 
-									= link_to 'Programa municipal de VIH/SIDA', gobierno_path(:id => 'programavih')
-
-						/ SEGURIDAD 
-						%li 
-							= link_to 'Seguridad', gobierno_path(:id => '')
-
-						/ SERVICIOS EDUCATIVOS 
-						%li.active-inside
-							= link_to 'Servicios educativos', gobierno_path(:id => 'servicioseducativos')
-							%ul.drop-inside
-								%li 
-									= link_to 'Colegios y jardines privados en San Fernando', gobierno_path(:id => 'colegiosyjardinesprivados')
-								%li 
-									= link_to 'Colegios y jardines públicos en San Fernando', gobierno_path(:id => 'colegiosyjardinespublicos')
-								%li 
-									= link_to 'Estudios de nivel medio y superior', gobierno_path(:id => 'estudiosmedios')
-								%li 
-									= link_to 'Nivel inicial, primario y secundario', gobierno_path(:id => 'nivelinicial')
-								%li 
-									= link_to 'Unidades de desarrollo infantil', gobierno_path(:id => 'unidadesdedesarrollo')
-								%li 
-									= link_to 'Discapacidad', gobierno_path(:id => 'discapacidad')
-							
-						%li.active-inside
-							= link_to 'Atención al vecino', gobierno_path(:id => 'atencionalvecino')
-							%ul.drop-inside
-								%li 
-									= link_to 'OMIC', gobierno_path(:id => 'omic')
-								%li 
-									= link_to 'UFRACC', gobierno_path(:id => 'ufracc')
-					/ PRENSA 
-					%ul.dropdown.prensa
-						%li.active
-							= link_to 'Prensa', prensa_path(:id => 'prensa'), :class => 'sections_prensa'
-						%li 
-							= link_to 'Agenda para medios', prensa_path(:id => 'agendamedios')
-						%li 
-							= link_to 'Medios locales', prensa_path(:id => 'medioslocales')
-						%li 
-							= link_to 'Boletines oficiales', prensa_path(:id => 'boletinesoficiales')
-					
-
-					%li.agenda
-						= link_to 'Agenda', calendars_path, :class => 'calendars'
-					%li.noticia
-						= link_to 'Noticias', news_index_path, :class => 'news'
-					/ %li
-					=# link_to 'Galería', ''
-					/ %li.contacto
-					=# link_to 'Contacto', sections_oa
-				
-				/ .search
-				/ 	%form
-				/ 		%input(type="text" name="palabra" placeholder="Buscar")
-				/ 		%input(type="submit" id="search-submit" value="Buscar")
