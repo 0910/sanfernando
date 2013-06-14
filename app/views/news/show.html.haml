@@ -16,7 +16,8 @@
 					%h4 #{@news.subtitle}
 					%h5 
 						#{I18n.l(@news.date, :format => '%d %B %Y')}
-					%p #{@news.info}
+					- @info.each do |info|
+						%p #{info}
 					- unless @news.videos.empty?
 						%iframe.newsvideoframe(type="text/html" width="285" height="214" src="#{@news.videos}" frameborder="0" allowfullscreen)
 					.share
