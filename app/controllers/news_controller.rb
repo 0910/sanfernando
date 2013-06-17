@@ -6,5 +6,6 @@ class NewsController < InheritedResources::Base
 	end
 	def show
 		@news = News.find(params[:id])
+    @info = @news.info.split(/\r\n/) 
 	end
 end
