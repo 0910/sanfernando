@@ -346,6 +346,14 @@ body{
 .navbar .nav > li > .dropdown-menu:after {
     border:none;
 }
+.navbar-inverse .nav > li > a:focus, .navbar-inverse .nav > li > a:hover {
+    background-color: transparent;
+    color: #555;
+}
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
+    background-color: transparent;
+    color: #555;
+}
 .dropdown-menu {
     background-clip: padding-box;
     background-color: white;
@@ -363,7 +371,6 @@ body{
     top: 100%;
     z-index: 1000;
     li a{
-    	fon
     }
 }
 .dropdown-submenu > .dropdown-menu {
@@ -925,7 +932,7 @@ ul.servicios{
 ----------------------------------------------------*/
 
 #content #content-inside> .top-section{
-		margin-bottom: 35px;
+		margin: 20px 0 35px 0;
 		position: relative;
 	}
 
@@ -1261,7 +1268,11 @@ ul.servicios{
 	margin: auto;
 	left: 450px;
 }
-.meses select{ padding: 2px;}
+.meses select{
+	padding: 2px;
+	margin-top:-5px;
+	border-radius: 0px;
+}
 
 /*CONTACTO*/
 #contacto {
