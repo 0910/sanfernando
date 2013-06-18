@@ -338,7 +338,7 @@ body{
 		border-bottom:2px solid #F7931E;
 	}
 }
-.navbar .nav > li.active{
+.navbar .nav > li.active > a{
 	border-bottom:2px solid #F7931E;
 }
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .nav li.dropdown.active > .dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle{
