@@ -441,8 +441,8 @@ body{
 		position:relative;
 		cursor:pointer;
 		img{
-			width:100%;
-			height:auto;
+			height:100%;
+			width:auto;
 		}
 		.over {
 		    background: url("black.png") repeat scroll 0 0 transparent;
@@ -686,7 +686,7 @@ body{
 			color: #808080;
 			letter-spacing: -3px;
 			padding-right: 15px;
-			font-weight: bold;
+			font-weight: normal;
 			margin-top:8px;
 		}
 
@@ -696,7 +696,7 @@ body{
 			border-left: 3px solid #CCC;
 			margin-top: 10px;
 			padding-left: 10px;
-			font-weight: bold;
+			font-weight: normal;
 		}
 
 	.item .data h4{

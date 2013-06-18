@@ -23,13 +23,13 @@ $(function(){
 	 	var myCounter = setInterval(function(){
 		 	if(photoPosNews<photoCntNews-1){
 			 	photoPosNews+=1;
-			 	$('#header-inside .homeslider .content .ph').fadeOut(200, function(){
+			 	$('#header-inside .homeslider .content .ph').fadeOut(400, function(){
 					$('#header-inside .homeslider .content .ph').eq(photoPosNews).show();
 				});
 			
 		 	}else if(photoPosNews==photoCntNews-1){
 			 	photoPosNews = 0;
-			 	$('#header-inside .homeslider .content .ph').fadeOut(200, function(){
+			 	$('#header-inside .homeslider .content .ph').fadeOut(400, function(){
 					$('#header-inside .homeslider .content .ph').eq(photoPosNews).show();
 				});
 		 	}
@@ -38,7 +38,7 @@ $(function(){
 	
 	$('.thumbox').off('click').on('click', function(event){
 		photoPosNews = $(this).index();
-		$('#header-inside .homeslider .content .ph').fadeOut(200, function(){
+		$('#header-inside .homeslider .content .ph').fadeOut(400, function(){
 			$('#header-inside .homeslider .content .ph').eq(photoPosNews).show();
 		});
 		 clearInterval(myCounter);
