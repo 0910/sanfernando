@@ -8,7 +8,7 @@
 				- unless news.images.empty?
 					= image_tag(news.images.first.file.url(:small))
 			.data
-				%h4 #{news.title}
+				%h3 #{news.title}
 				%h5 #{I18n.l(news.date, :format => '%d %B %Y')}
 				%p #{news.subtitle}
 				= link_to('Leer más', news_path(news.id),:class => "button")
