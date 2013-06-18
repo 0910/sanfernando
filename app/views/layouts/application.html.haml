@@ -11,9 +11,9 @@
 			= render '/layouts/navigation'
 			#content
 				#content-inside
-					= yield
-					- if controller_name != "home"
-						.right
+					.row-fluid
+						= yield
+						- if controller_name != "home"
 							= render '/layouts/mas_sanfer'
-			= render '/layouts/media'
-			= render '/layouts/footer'
+				= render '/layouts/media'
+				= render '/layouts/footer'

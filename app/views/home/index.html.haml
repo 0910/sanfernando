@@ -1,42 +1,45 @@
 #header
 	#header-inside
 		.shadow
-		.main
-			.grid-8-12
-				.container
+		.main.row-fluid
+			.span8
+				.homeslider
 					.content
 						- @news.each do |news|
 							.ph
-								= image_tag(news.images.first.file.url(:large))
+								-unless news.images.empty?
+									= image_tag(news.images.first.file.url(:large))
 								.data
 									.data-inside
 										%h3 #{news.title}
 										%p #{news.subtitle}
 										= link_to 'Leer más', news_path(news.id), :class => 'button'
-			.grid-4-12
-				- (@news).each do |news|		
-					.ph.thumb
-						= image_tag(news.images.first.file.url(:small))
-						.over
-						.viewmore
-.top
-	.grid-4-12
+			.span4
+				.row-fluid
+					- (@news).each do |news|
+						.span6.thumbox
+							.thumb
+								- unless news.images.empty?
+									= image_tag(news.images.first.file.url(:small))
+								.over
+								.viewmore
+.row-fluid
+	.span4
 		.header
 			.icon-agenda
 			%h1 agenda cultural
 			.cierre-oscuro
-.top
-	.grid-4-12
+	.span4
 		.header
 			.icon-mas
 			%h1 más san fernando
 			.cierre-oscuro
-.top
-	.grid-4-12
+	.span4
 		.header
 			.icon-conectate
 			%h1 conectate
 			.cierre-oscuro
-= render '/layouts/agenda'
-= render '/layouts/mas_sanfer'
-= render '/layouts/conectate'
+.row-fluid
+	= render '/layouts/agenda'
+	= render '/layouts/mas_sanfer'
+	= render '/layouts/conectate'

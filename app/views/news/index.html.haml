@@ -1,18 +1,17 @@
-.top.top-section
+.row-fluid.subtitle
 	%h1 noticias
 	.cierre-oscuro
-.left
-	.grid-8-12
-		- @news.each do |news|
-			.item
-				.ph
-					- unless news.images.empty?
-						= image_tag(news.images.first.file.url(:small))
-				.data
-					%h4 #{news.title}
-					%h5 #{I18n.l(news.date, :format => '%d %B %Y')}
-					%p #{news.subtitle}
-					= link_to('Leer más', news_path(news.id),:class => "button")
-		#bandpagina
-		- if @news.respond_to?(:num_pages)
-			= paginate @news, :window => 3
+.span8(style="margin-left:0px;")
+	- @news.each do |news|
+		.item
+			.ph
+				- unless news.images.empty?
+					= image_tag(news.images.first.file.url(:small))
+			.data
+				%h4 #{news.title}
+				%h5 #{I18n.l(news.date, :format => '%d %B %Y')}
+				%p #{news.subtitle}
+				= link_to('Leer más', news_path(news.id),:class => "button")
+	#bandpagina
+	- if @news.respond_to?(:num_pages)
+		= paginate @news, :window => 3
