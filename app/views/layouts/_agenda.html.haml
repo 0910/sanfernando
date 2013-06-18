@@ -2,7 +2,8 @@
 	- @calendars.each do |calendar|
 		.item
 			.ph(style="width:100%")
-				= image_tag(calendar.images.first.file.url(:large), :class => 'ph')
+				- unless calendar.images.empty?
+					= image_tag(calendar.images.first.file.url(:large), :class => 'ph')
 			.date
 				%h1 #{calendar.fecha.strftime("%d")}
 				%h2 
