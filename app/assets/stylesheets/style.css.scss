@@ -850,6 +850,12 @@ ul.servicios{
 		width: 960px;	height: 416px;
 		margin: 0 auto;
 	}
+#map_canvas{
+	height: 100%;
+	.gmnoprint{
+		display: none;
+	}
+}	
 /*ICONOS*/
 	#media #media-inside .icon-video,
 	#media #media-inside .icon-mas,

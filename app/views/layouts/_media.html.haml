@@ -13,7 +13,7 @@
 				.cierre-claro
 
 			.item
-				/ %iframe(width="307" height="230" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ar/maps/ms?msid=201373823230886532325.0004b99649d0ef93e0c82&amp;msa=0&amp;ie=UTF8&amp;ll=-34.445229,-58.559167&amp;spn=0.068992,0.110378&amp;t=m&amp;output=embed")
+				#map_canvas
 		.grid-4-12
 			.header
 				.icon-fotos
@@ -23,3 +23,21 @@
 				%a.prev(href="#")
 				%a.next(href="#")
 				.container
+
+:javascript
+	myCenter = new google.maps.LatLng(-34.4430618,-58.5579643);
+	function initialize() {
+		var mapOptions = {
+		  center: myCenter,
+		  zoom: 15,
+		  mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"),
+		    mapOptions);
+		var marker=new google.maps.Marker({
+		  position:myCenter,
+		});
+
+		marker.setMap(map);
+
+	}

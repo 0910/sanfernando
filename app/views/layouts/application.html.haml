@@ -5,8 +5,9 @@
 		= favicon_link_tag image_path("favicon.ico")
 		= stylesheet_link_tag    "application", :media => "all"
 		= javascript_include_tag "application"
+		= javascript_include_tag "http://maps.googleapis.com/maps/api/js?key=AIzaSyAoAqRFSg4SPOGlkeJumobsLgCYKIAAEM0&sensor=false"
 		= csrf_meta_tags
-	%body{:id => "#{controller_name}", :class => "#{controller_name} #{controller_name}_#{action_name}"}
+	%body{:id => "#{controller_name}", :class => "#{controller_name} #{controller_name}_#{action_name}", :onload => "initialize()"}
 		#main
 			= render '/layouts/navigation'
 			#content

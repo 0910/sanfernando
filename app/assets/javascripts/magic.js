@@ -109,12 +109,12 @@ $(function(){
 		photoPos = 1;
 		photoCnt = $('.fotos .container .ph').size();
 		newsSize = photoCnt * 307;
-		prev = $('.prev');
-		next = $('.next');
+		prev = $('.fotos .prev');
+		next = $('.fotos .next');
 
 		$('.fotos .container').css('width', newsSize);
 
-		$('.prev').off('click').on('click', function(event){
+		$('.fotos .prev').off('click').on('click', function(event){
 			event.preventDefault();
 			if (photoPos > 1){
 				photoPos--;
@@ -122,7 +122,7 @@ $(function(){
 				sliderPosition(photoPos, photoCnt, prev, next);
 			}
 		});
-		$('.next').off('click').on('click', function(event){
+		$('.fotos .next').off('click').on('click', function(event){
 			event.preventDefault();
 			if (photoPos < photoCnt){
 				photoPos++;
@@ -134,8 +134,8 @@ $(function(){
 
 		// Si hay solo una imagen ocultamos las flechas
 		if(photoCnt==1){
-			$('.next').hide();
-			$('.prev').hide();
+			$('.fotos .next').hide();
+			$('.fotos .prev').hide();
 		}
 		
 		// Slider de fotos News Internas
