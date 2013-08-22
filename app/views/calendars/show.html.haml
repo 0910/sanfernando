@@ -15,5 +15,9 @@
 					#{I18n.l(@calendar.fecha, :format => '%d %B %Y')}
 				%h2 #{@calendar.title}
 				%h3 #{@calendar.subtitle}
-				%p #{@calendar.info}
-				%p #{@calendar.detail}
+				- unless @calendar.info.nil?
+					%h2 Información
+					%p #{@calendar.info}
+				- unless @calendar.detail.nil?
+					%h2 Detalle
+					%p #{@calendar.detail}
