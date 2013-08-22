@@ -21,6 +21,7 @@ ActiveAdmin.register Calendar do
     f.input :title, as: :string
     f.input :subtitle, as: :string
     f.input :info, as: :text
+    f.input :detail, as: :text
     f.input :fecha, as: :datepicker
     f.input :estado, :as => :select, :collection => ["mostrar", "oculto"], :selected => "mostrar"
   end  

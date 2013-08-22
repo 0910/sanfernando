@@ -8,9 +8,10 @@
 	.grid-8-12
 		- (@calendars*3).each do |calendar|
 			.grid-4-12
-				.item.agenda
+				= link_to(calendar_path(calendar), :class => ' item agenda') do
 					.ph
-						= image_tag(calendar.images.first.file.url(:small))
+						- unless calendar.images.empty?
+							= image_tag(calendar.images.first.file.url(:small))
 					.date
 						%h1 #{I18n.l(calendar.fecha, :format => '%d %B %Y')}
 					.data

@@ -1,6 +1,6 @@
 Sanfernando::Application.routes.draw do
   resources :news, only: [:index, :show]
-  resources :calendars, only: [:index]
+  resources :calendars, only: [:index, :show]
   root to: 'home#index'
 
   resources :sections, only: [:index]
