@@ -20,4 +20,5 @@
 					%p #{@calendar.info}
 				- unless @calendar.detail.nil?
 					%h2 Detalle
-					%p #{@calendar.detail}
+					- @detail.each do |detail|
+						%p #{detail}
