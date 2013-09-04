@@ -13,4 +13,4 @@
 						#{I18n.l(calendar.fecha, :format => "%B")}
 				.data(style="width:100%")
 					%h4 #{calendar.title}
-					#{calendar.info}
+					%p #{calendar.info.truncate(140, omission: '...')}

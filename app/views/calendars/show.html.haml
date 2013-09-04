@@ -4,6 +4,11 @@
 .span8(style="margin-left:0px;")
 	.news-inside
 		.item
+			.titlefull
+				%h5 
+					#{I18n.l(@calendar.fecha, :format => '%d %B %Y')}
+					%h2 #{@calendar.title}
+					%h3 #{@calendar.subtitle}
 			.ph
 				.phslider
 					- @calendar.images.each do |image|
@@ -11,10 +16,6 @@
 				= link_to('', "#", :class => "prevslider")
 				= link_to('', "#", :class => "nextslider")
 			.data
-				%h5 
-					#{I18n.l(@calendar.fecha, :format => '%d %B %Y')}
-				%h2 #{@calendar.title}
-				%h3 #{@calendar.subtitle}
 				- unless @calendar.info.nil?
 					%h2 Información
 					%p #{@calendar.info}

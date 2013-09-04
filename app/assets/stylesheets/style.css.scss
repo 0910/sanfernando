@@ -444,17 +444,19 @@ body{
 				left: 20px;
 			}
 			.data-inside h3{
-				font-size: 14px;
+				font-size: 18px;
 				color: #FFF;
 			}
 			.data-inside p{
-				font-size: 11px;
+				font-size: 12px;
 				color: #ccc;
+				line-height: 14px;
+				margin:10px 0px;
 			}
 			.data-inside a{
 				font: 10px 'HelveticaNeue_RO', helvetica, arial, sans-serif;
 				color: #FFF;
-				margin-bottom: 10px;			
+				margin-bottom: 10px;		
 			}
 		}
 	}
@@ -716,6 +718,7 @@ body{
 		}
 
 		.item .date h2{
+			font:24px/24px 'HelveticaNeue_MC', helvetica, arial, sans-serif;
 			width: 60%;
 			float: left;
 			border-left: 3px solid #CCC;
@@ -745,7 +748,24 @@ body{
 	.item img{
 		width: 100%;
 	}
-
+/*AGENDA*/
+	.item{
+		padding:2.25% 2.25% 0 2.25%;
+		.agenda{
+			h4{
+				font-size:16px;
+			}
+			p{
+				font-size: 12px;
+				letter-spacing: 0.7pt;
+				line-height: 16px;
+				margin-top:5px;
+			}
+		}
+		.agenda:hover{
+			background:#fafafa;
+		}
+	}
 /*CENTRO DE ATENCION*/
 	.centro-atencion{
 		background: #EEEFF4;
@@ -1034,6 +1054,12 @@ ul.servicios{
 
 /*NEWS*/
 
+.newslist{
+	padding:2.25%;
+	p{
+		line-height:17px;
+	}
+}
 .item{
 	position: relative;
 	float: left;
@@ -1042,7 +1068,7 @@ ul.servicios{
 		float: left;
 		margin-right: 10px;
 	}
-	.data{
+	.data, .title{
 		float: left;
 		width: 58%;
 		h4{
@@ -1207,15 +1233,24 @@ ul.servicios{
 	padding:0px;
 	line-height: 20px;
 }
-.news-inside .item .data h2{
+.news-inside .item .titlefull h2{
 	color: #22578C;
 	margin-top:15px;
 }
-.news-inside .item .data h3{
+.news-inside .item .data h2{
+	color: #22578C;
+	margin-top:15px;
+	font-size: 14px;
+}
+.news-inside .item .titlefull h3{
 	font-size: 14px;
 	line-height: 20px;
 	color:#666;
 	margin-bottom: 10px;
+	margin-top:10px;
+}
+.news-inside .item .titlefull h5{
+	border-bottom:1px dashed #333;
 }
 .news-inside .item .data h4{
 	color:#F7931E;
@@ -1367,7 +1402,7 @@ ul.servicios{
 .grid-4-12  .agenda  .ph{		width: 100%;							}
 .grid-4-12 .agenda .date{		min-height: 30px;	padding-top: 10px;	}
 .grid-4-12 .agenda .date h1{	font-size: 30px;	line-height: 20px;	padding: 5px 0 3px;	}
-.grid-4-12 .agenda .date h2{	font-size: 16px;	border: none;	padding: 0;	}
+.grid-4-12 .agenda .date h2{	font:24px/24px 'HelveticaNeue_MC', helvetica, arial, sans-serif;	border: none;	padding: 0;	}
 .grid-4-12 .agenda .data{		width: 100%;							}
 .grid-4-12 .agenda .data h4{	color: #22578C;		font-weight: normal;}
 

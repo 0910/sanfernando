@@ -11,8 +11,8 @@
 									= image_tag(news.images.first.file.url(:large))
 								.data
 									.data-inside
-										%h3 #{news.title}
-										%p #{news.subtitle}
+										%h3 #{news.title.truncate(70, omission: '...')}
+										%p #{news.subtitle.truncate(200, omission: '...')}
 										= link_to 'Leer más', news_path(news.id), :class => 'button'
 			.span4
 				.row-fluid

@@ -4,6 +4,11 @@
 .span8(style="margin-left:0px;")
 	.news-inside
 		.item
+			.titlefull
+				%h5 
+					#{I18n.l(@news.date, :format => '%d %B %Y')}
+				%h2 #{@news.title}
+				%h3 #{@news.subtitle}
 			.ph
 				.phslider
 					- @news.images.each do |image|
@@ -11,10 +16,6 @@
 				= link_to('', "#", :class => "prevslider")
 				= link_to('', "#", :class => "nextslider")
 			.data
-				%h5 
-					#{I18n.l(@news.date, :format => '%d %B %Y')}
-				%h2 #{@news.title}
-				%h3 #{@news.subtitle}
 				- @info.each do |info|
 					%p #{info}
 				- unless @news.videos.empty?

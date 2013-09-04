@@ -3,7 +3,7 @@
 	.cierre-oscuro
 .span8(style="margin-left:0px;")
 	- @news.each do |news|
-		.item
+		.item.newslist
 			.ph
 				- unless news.images.empty?
 					= image_tag(news.images.first.file.url(:small))
