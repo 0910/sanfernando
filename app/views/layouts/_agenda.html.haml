@@ -14,3 +14,5 @@
 				.data(style="width:100%")
 					%h4 #{calendar.title}
 					%p #{calendar.info.truncate(140, omission: '...')}
+	.item
+		= link_to 'Ver agenda completa +', calendars_path, :class => 'morecalendars'

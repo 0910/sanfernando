@@ -1,18 +1,15 @@
-.top.top-section 
+.row-fluid.subtitle
 	%h1 agenda de mes actual
 	= form_tag({:action => :index}, :class => "meses") do
 		= select_tag "months", options_for_select((@months), I18n.l(Date.today, :format => '%B').humanize)
 		= submit_tag "Consultar", :class => 'button'
-	.cierre-oscuro 
-.left 
-	.grid-8-12
-		- (@calendars*3).each do |calendar|
-			.grid-4-12
-				= link_to(calendar_path(calendar), :class => ' item agenda') do
-					.ph
-						- unless calendar.images.empty?
-							= image_tag(calendar.images.first.file.url(:small))
-					.date
-						%h1 #{I18n.l(calendar.fecha, :format => '%d %B %Y')}
-					.data
-						%h4 #{calendar.title}
+	.cierre-oscuro
+.span8(style="margin-left:0px;")
+	- @calendars.each do |calendar|
+		.span4
+			.item
+				= link_to(calendar_path(calendar), :class => 'agenda') do
+					%h5 #{I18n.l(calendar.fecha, :format => '%d %B %Y')}
+					- unless calendar.images.empty?
+						= image_tag(calendar.images.first.file.url(:small))
+					%h1 #{calendar.title}

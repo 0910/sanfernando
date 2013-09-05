@@ -749,17 +749,42 @@ body{
 		width: 100%;
 	}
 /*AGENDA*/
+	.morecalendars{
+		font:18px/24px 'HelveticaNeue_MC', helvetica, arial, sans-serif;
+		color:#666;
+		text-align:center;
+		width:100%;
+		float:left;
+		padding:20px 0px;
+		text-transform: uppercase;
+	}
+	.morecalendars:hover{
+		text-decoration: none;
+	}
 	.item{
 		padding:2.25% 2.25% 0 2.25%;
 		.agenda{
+			h1{
+				font-size:12px;
+				letter-spacing:0px;
+				color:#666;
+			}
 			h4{
 				font-size:16px;
+				padding:5px;
 			}
 			p{
 				font-size: 12px;
 				letter-spacing: 0.7pt;
 				line-height: 16px;
 				margin-top:5px;
+			}
+			img{
+				width:100%;
+			}
+			h5{
+				padding:5px;
+				font-size: 14px;
 			}
 		}
 		.agenda:hover{
@@ -1399,12 +1424,6 @@ ul.servicios{
 
 
 /*AGENDA*/
-.grid-4-12  .agenda  .ph{		width: 100%;							}
-.grid-4-12 .agenda .date{		min-height: 30px;	padding-top: 10px;	}
-.grid-4-12 .agenda .date h1{	font-size: 30px;	line-height: 20px;	padding: 5px 0 3px;	}
-.grid-4-12 .agenda .date h2{	font:24px/24px 'HelveticaNeue_MC', helvetica, arial, sans-serif;	border: none;	padding: 0;	}
-.grid-4-12 .agenda .data{		width: 100%;							}
-.grid-4-12 .agenda .data h4{	color: #22578C;		font-weight: normal;}
 
 .meses{
 	position: absolute;
