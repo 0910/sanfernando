@@ -1,18 +1,19 @@
 .span4
-	- @calendars.each do |calendar|
-		.item
-			= link_to(calendar_path(calendar), :class => ' item agenda') do
-				.ph(style="width:100%")
-					- unless calendar.images.empty?
-						= image_tag(calendar.images.first.file.url(:large), :class => 'ph')
-				.date
-					%h1 #{calendar.fecha.strftime("%d")}
-					%h2 
-						de 
-						%br 
-						#{I18n.l(calendar.fecha, :format => "%B")}
-				.data(style="width:100%")
-					%h4 #{calendar.title}
-					%p #{calendar.info.truncate(140, omission: '...')}
+	- unless @calendars.nil?
+		- @calendars.each do |calendar|
+			.item
+				= link_to(calendar_path(calendar), :class => ' item agenda') do
+					.ph(style="width:100%")
+						- unless calendar.images.empty?
+							= image_tag(calendar.images.first.file.url(:large), :class => 'ph')
+					.date
+						%h1 #{calendar.fecha.strftime("%d")}
+						%h2 
+							de 
+							%br 
+							#{I18n.l(calendar.fecha, :format => "%B")}
+					.data(style="width:100%")
+						%h4 #{calendar.title}
+						%p #{calendar.info.truncate(140, omission: '...')}
 	.item
 		= link_to 'Ver agenda completa +', calendars_path, :class => 'morecalendars'
