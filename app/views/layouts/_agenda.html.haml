@@ -7,11 +7,12 @@
 						- unless calendar.images.empty?
 							= image_tag(calendar.images.first.file.url(:large), :class => 'ph')
 					.date
-						%h1 #{calendar.fecha.strftime("%d")}
-						%h2 
-							de 
-							%br 
-							#{I18n.l(calendar.fecha, :format => "%B")}
+						- unless calendar.fecha.nil?
+							%h1 #{calendar.fecha.strftime("%d")}
+							%h2 
+								de 
+								%br 
+								#{I18n.l(calendar.fecha, :format => "%B")}
 					.data(style="width:100%")
 						%h4 #{calendar.title}
 						%p #{calendar.info.truncate(140, omission: '...')}
