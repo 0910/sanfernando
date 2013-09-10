@@ -5,10 +5,11 @@
 	.news-inside
 		.item
 			.titlefull
-				%h5 
-					#{I18n.l(@calendar.fecha, :format => '%d %B %Y')}
-					%h2 #{@calendar.title}
-					%h3 #{@calendar.subtitle}
+				- unless @calendar.fecha.nil?
+					%h5 
+						#{I18n.l(@calendar.fecha, :format => '%d %B %Y')}
+				%h2 #{@calendar.title}
+				%h3 #{@calendar.subtitle}
 			.ph
 				.phslider
 					- @calendar.images.each do |image|

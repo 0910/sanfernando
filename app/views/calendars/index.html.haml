@@ -9,7 +9,8 @@
 		.span4
 			.item
 				= link_to(calendar_path(calendar), :class => 'agenda') do
-					%h5 #{I18n.l(calendar.fecha, :format => '%d %B %Y')}
+					- unless calendar.fecha.nil?
+						%h5 #{I18n.l(calendar.fecha, :format => '%d %B %Y')}
 					- unless calendar.images.empty?
 						= image_tag(calendar.images.first.file.url(:small))
 					%h1 #{calendar.title}
