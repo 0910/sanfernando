@@ -1,5 +1,6 @@
 .row-fluid.subtitle
 	%h1 agenda de mes actual
+.row-fluid
 	= form_tag({:action => :index}, :class => "meses") do
 		= select_tag "months", options_for_select((@months), I18n.l(Date.today, :format => '%B').humanize)
 		= submit_tag "Consultar", :class => 'button'
