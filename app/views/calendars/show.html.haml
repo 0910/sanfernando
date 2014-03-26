@@ -24,3 +24,7 @@
 					%h2 Detalle
 					- @detail.each do |detail|
 						%p #{detail}
+				- unless @calendar.documents.empty?
+					%h2 PDF
+					- @calendar.documents.each do |doc|
+						= link_to doc.file_file_name, doc.file.url, target: '_blank'
