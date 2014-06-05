@@ -1521,7 +1521,6 @@ ul.servicios{
 	    border:1px solid #CCC;
     	margin-bottom: 10px;
 	}
-
 	.error {
 	    color: #FF0000;
 	    float: left;
@@ -1530,3 +1529,45 @@ ul.servicios{
 	    text-align: left;
 	    width: 380px;
 	}
+#new_message{
+	input{
+		width:50%;
+		border-radius: 0px;
+		margin: 10px 0;
+	}
+	.label, .badge {
+		width:30%;
+	    background-color: transparent;
+	    color: #000000;
+	    display: inline-block;
+	    font-size: 13px;
+	    font-weight: bold;
+	    line-height: 14px;
+	    padding: 0 4px;
+	    text-shadow: none;
+	    vertical-align: baseline;
+	    white-space: nowrap;
+	    border-radius: 0px;
+	    text-align:right;
+	}
+	textarea{
+		width:50%;
+		border-radius: 0px;
+	}
+	select{
+		border-radius: 0px;
+		height: 30px;
+		line-height: 30px;
+		margin: 10px 0;
+		width:52.3%;
+	}
+	button{
+		width:83.5%;
+		padding:10px;
+		background:#22578C;
+		color:#fff;
+		border-radius:0px;
+		border:0px;
+		margin-top:10px;
+	}
+}

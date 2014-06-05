@@ -6,6 +6,8 @@ Sanfernando::Application.routes.draw do
   resources :sections, only: [:index]
   get '/prensa' => 'sections#prensa'
   get '/gobierno' => 'sections#gobierno'
+  match 'drogano' => 'drogano#new', :as => 'drogano', :via => :get
+  match 'drogano' => 'drogano#create', :as => 'drogano', :via => :post
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
