@@ -59,5 +59,19 @@ module Sanfernando
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 993,
+      :domain               => "sanfernando.gov.ar",
+      :user_name            => "emadobao",
+      :password             => "pranayama.3812",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "sanfernando.gov.ar"
+    }
   end
 end

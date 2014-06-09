@@ -2,22 +2,4 @@
   %h1 Envianos tu Denuncia
   .cierre-oscuro
 .span8(style="margin-left:0px;")
-  %h3
-    Tu participación es muy importante para prevenir la droga en San Fernando. Toda la información será mantenida bajo estricta confidencialidad. Completa el siguiente formulario con los datos del hecho para enviar la denuncia.
-
-  %hr
-  = semantic_form_for @message, :url => drogano_path do |f| 
-    = f.input :name, :label => "Nombre", :input_html => {:placeholder => "Nombre"}
-    = f.input :apodo, :label => "Apodo", :input_html => {:placeholder => "Apodo"}
-    = f.input :edad, :label => "Edad Aproximada", :input_html => {:placeholder => "Edad aproximada"}
-    = f.input :senas, :label => "Señas Particulares", :input_html => {:placeholder => "Señas particulares"}
-    = f.input :vestimenta, :label => "Vestimenta que usa", :input_html => {:placeholder => "Vestimenta que usa"}
-    = f.input :domicilio, :label => "Domicilio de referencia", :input_html => {:placeholder => "Domicilio de referencia"}
-    = f.input :barrio, :label => "Barrio / Localidad", :input_html => {:placeholder => "Barrio / Localidad"}
-    = f.input :calles, :label => "Entre calles", :input_html => {:placeholder => "Entre calles"}
-    = f.input :vivienda, :label => "Descripción de la vivienda", :input_html => {:placeholder => "Descripción vivienda"}
-    = f.input :body, :as => :text,:label => "Comentarios", :input_html => {:placeholder => "Comentarios...", :rows => 4}
-    = f.input :tipo_venta, :label => "Modo de Venta", :as => :select, :collection => ['Delivery', 'Comercio', 'Vía pública', 'Vivienda']
-    = f.input :tipo_droga, :label => "Tipo de Droga", :as => :select, :collection => ['Paco', 'Cocaína', 'Éxtasis / MDMA', 'LSD', 'Crack', 'Heroína', 'Metanfetaminas', 'Marihuana', 'Psicofármacos', 'Otros', 'Desconozco']
-    = f.input :fecha, :label => "Fecha del evento", :input_html => {:placeholder => "Fecha del evento"}
-    = f.button :Enviar
+  %iframe{:src => "http://drogano.nuevediez.com/index.php", :class => 'denunciaform'}
