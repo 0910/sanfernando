@@ -1,0 +1,12 @@
+.row-fluid.subtitle
+  %h1 Situación Económico-Financiera
+  .cierre-oscuro
+/ LEFT
+.span8(style="margin-left:0px;")
+  .news-inside
+    .item
+      .data
+        %h4 Descargar archivo
+        .download
+          = image_tag("application-pdf.png")
+          %a{:href => "http://www.sanfernando.gov.ar/system/pdf/situacion-economico-financiera-al-30-6-2014.pdf"} Situación Económico-Financiera al 30-6-2014.pdf
