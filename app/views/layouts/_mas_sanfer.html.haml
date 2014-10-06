@@ -7,9 +7,9 @@
 		= image_tag("drogano.jpg")	
 
 	%h1(style="font-size:20px; color:#999; margin-top:6px") XX Salón Primavera
-	= link_to('system/pdf/basesxxsalonprimavera2014.pdf', :class => 'bannerbox') do
-		= image_tag("salon.jpg")		
-
+	= link_to(sections_path(:id => 'xxsalonprimavera'), :class => 'bannerbox') do
+		= image_tag("salon.jpg")
+		
 	.item.centro-atencion
 		%h2 
 			centro de 
