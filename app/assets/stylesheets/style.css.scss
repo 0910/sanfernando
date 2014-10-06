@@ -1141,6 +1141,7 @@ ul.servicios{
 	width: 104%;
 	margin: 0;
 	height: auto;
+	position:relative;
 }
 .galeria-inside .item .ph a{
 	height: 100px;
@@ -1183,9 +1184,10 @@ ul.servicios{
 	a.prevslider,
 	a.nextslider{
 		background: url("sprites.png");
-		width: 10px; 	height: 15px;
+		width: 10px;
+		height: 15px;
 		position: absolute;
-		top: 185px;
+		top: 50%;
 		z-index: 100;
   }
 	a.prevslider{
