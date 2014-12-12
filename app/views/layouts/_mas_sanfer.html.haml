@@ -1,24 +1,16 @@
 .span4
 	%h1(style="font-size:20px; color:#999;") Videos Importantes
-	%iframe(style="margin-top:5px;" width="304" height="171" src="http://www.youtube.com/embed/xUYXrRqv0Cs" frameborder="0" allowfullscreen)
+	%iframe(style="margin-top:5px;" width="304" height="171" src="http://www.youtube.com/embed/73Olon6feIo?list=PLVCrWlddCNDDXLF739fBGs7oaQ8CEPfhD" frameborder="0" allowfullscreen)
 
 	%h1(style="font-size:20px; color:#999; margin-top:6px") Droga NO
 	= link_to(drogano_path, :class => 'bannerbox') do
 		= image_tag("drogano.jpg")	
 
-	%h1(style="font-size:20px; color:#999; margin-top:6px") XX Salón Primavera
-	= link_to(sections_path(:id => 'xxsalonprimavera'), :class => 'bannerbox') do
-		= image_tag("salon.jpg")
-		
-	.item.centro-atencion
-		%h2 
-			centro de 
-			%br 
-			atención al vecino
-		%h1 0800-777-6864
-		%form(method="post")
-			%input(type="text" name="nombre" value="" placeholder="Nombre")
-			%input(type="text" name="correo" value="" placeholder="Correo electrónico")
-			%input(type="text" name="mensaje" value="" placeholder="Mensaje")
-			%input(type="submit" value="Enviar consulta")
+	%h1(style="font-size:20px; color:#999; margin-top:6px") Colonias de Verano 2015
+	.bannerbox
+		= image_tag("Colonias_web.jpg")
+
+	%h1(style="font-size:20px; color:#999; margin-top:6px") Descuentos en tasas municipales
+	.bannerbox
+		= image_tag("descuentos_web.jpg")
 		
