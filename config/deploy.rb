@@ -19,7 +19,7 @@ set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
-set :repository, "git@github.com:octanko/sanfernando.git"
+set :repository, "git@github.com:0910/sanfernando.git"
 set :branch, "master"
 set :keep_releases, 2
 
