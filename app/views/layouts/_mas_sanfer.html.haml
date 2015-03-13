@@ -6,9 +6,9 @@
 	= link_to(drogano_path, :class => 'bannerbox') do
 		= image_tag("drogano.jpg")	
 
-	%h1(style="font-size:20px; color:#999; margin-top:6px") Colonias de Verano 2015
-	.bannerbox
-		= image_tag("Colonias_web.jpg")
+	%h1(style="font-size:20px; color:#999; margin-top:6px") Talleres Culturales Municipales
+	= link_to(sections_path(:id => 'talleres2015'), :class => 'bannerbox') do
+		= image_tag("talleres2015.jpg")
 
 	%h1(style="font-size:20px; color:#999; margin-top:6px") Descuentos en tasas municipales
 	.bannerbox
